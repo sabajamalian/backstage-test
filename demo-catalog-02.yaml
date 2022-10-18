@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-02
+  description: |
+    This is the description of the first demo catalog.
+  links:
+    - title: Website
+      url: http://braze.com
+    - title: Documentation
+      url: https://braze.com/docs
+    - title: Storybook
+      url: https://backstage.io/storybook
+    - title: Discord Chat
+      url: https://discord.com/invite/EBHEGzX
+  annotations:
+    github.com/project-slug: braze-inc/demo-01
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://braze.com
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/instance=cert-manager
+spec:
+  type: service
+  owner: CNCF
+  lifecycle: experimental
